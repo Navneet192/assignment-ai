@@ -13,6 +13,7 @@ uvicorn main:app --reload
 
 POST `/create-agent`
 
+
 ```json
 {
   "provider": "vapi",
@@ -21,18 +22,5 @@ POST `/create-agent`
   "language": "en"
 }
 ```
-
-Replace `provider` with `"retell"` to call the Retell API instead.
-
-## API Keys
-
-Update the `.env` file with your real API keys:
-
-```
-VAPI_API_KEY=your-vapi-key
-RETELL_API_KEY=your-retell-key
-```
-
-## Test it
 
 Visit Swagger UI at: http://127.0.0.1:8000/docs
